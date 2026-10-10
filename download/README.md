@@ -1,15 +1,10 @@
-# 📄 Business Plan Unirances 2027–2029
+# 📄 Documents livrables — Unirances
 
-**`MboaAssur_Business_Plan_2027-2029.pdf`** — document final (17 pages, version vectorielle PDF/A-ready).
+| Document | Fichier | Contenu |
+|---|---|---|
+| **Plan de Conception et Développement** | `Unirances_Plan_Conception_Developpement.pdf` | Plan d'exécution en 9 phases (nov. 2026 → déc. 2028) : cadrage, conception produit/UX, architecture technique, conformité CIMA/ASAC, développement MVP en 8 sprints, qualité, pilote, lancement, industrialisation. Jalons GO/NO-GO, budget 50 M FCFA, registre des risques. |
+| **Business Plan 2027-2029** | `MboaAssur_Business_Plan_2027-2029.pdf` | Marché chiffré aux sources ASAC/FANAF/CIMA, modèle de revenus (commissions d'apport), coûts, projections 3 ans. |
 
-> Le fichier conserve son nom d'origine « MboaAssur » (ancien nom du projet, rebaptisé **Unirances**) ; une version renommée sera régénérée prochainement.
-
-**Sommaire du document :**
-1. Résumé exécutif
-2. Marché chiffré (sources ASAC, FANAF, CIMA)
-3. Modèle de revenus — commissions d'apport
-4. Structure de coûts (CAPEX / OPEX)
-5. Projections financières 3 ans (P&L, break-even, financement)
-6. Risques et conformité réglementaire (Code CIMA)
+> Le business plan conserve son nom de fichier d'origine « MboaAssur » (ancien nom du projet, rebaptisé **Unirances**).
 
 Pour les scripts de génération, voir [`../scripts/`](../scripts).
