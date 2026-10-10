@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    @page { size: 794px 1123px; margin: 0; }
+    :root {
+      --c-bg: #0a1628;
+      --c-accent: #4da8da;
+      --c-text: #e8f0f8;
+      --c-muted: #7a9bb8;
+      --c-glow: #2d7ab3;
+    }
+    html, body {
+      margin: 0; padding: 0;
+      width: 794px; height: 1123px;
+      background: var(--c-bg);
+      color: var(--c-text);
+      font-family: 'Inter', sans-serif;
+    }
+    @media screen {
+      html { height: auto; display: flex; justify-content: center; min-height: 100vh; background: var(--c-bg); }
+      body { transform-origin: top center; scale: min(1, calc(100vw / 794), calc(100vh / 1123)); margin: 0 auto; box-shadow: 0 0 60px rgba(0,0,0,0.4); }
+    }
+    .cover { width: 794px; height: 1123px; position: relative; box-sizing: border-box;
+             border: none; outline: none; box-shadow: none; }
+
+    /* Layer 1 — fond : halos discrets (clippés) */
+    .layer-1 { position: absolute; inset: 0; overflow: hidden; z-index: 1; }
+    .glow-a { position: absolute; left: 0; top: 0; width: 480px; height: 480px;
+              background: radial-gradient(circle at 30% 30%, rgba(45,122,179,0.08), rgba(45,122,179,0) 70%); }
+    .glow-b { position: absolute; right: 0; bottom: 0; width: 560px; height: 560px;
+              background: radial-gradient(circle at 70% 70%, rgba(45,122,179,0.07), rgba(45,122,179,0) 70%); }
+
+    /* Layer 2 — structure : cadre lumineux */
+    .layer-2 { position: absolute; inset: 0; z-index: 2; }
+    .frame { position: absolute; left: 60px; right: 60px; top: 80px; bottom: 80px;
+             border: 2px solid var(--c-accent); }
+
+    /* Layer 3 — contenu */
+    .layer-3 { position: absolute; inset: 0; z-index: 3; }
+    .kicker {
+      position: absolute; left: 112px; top: 138px;
+      font-size: 11pt; font-weight: 300; letter-spacing: 5px;
+      text-transform: uppercase; color: var(--c-accent);
+    }
+    .title {
+      position: absolute; left: 110px; top: 232px;
+      font-family: 'Playfair Display', serif;
+      font-size: 58pt; font-weight: 900; line-height: 1.12;
+      color: var(--c-text); max-width: 560px;
+      text-shadow: 0 0 34px rgba(77,168,218,0.35);
+    }
+    .subtitle {
+      position: absolute; left: 112px; top: 356px;
+      font-size: 15.5pt; font-weight: 400; color: var(--c-accent);
+      letter-spacing: 0.5px;
+    }
+    .summary {
+      position: absolute; left: 112px; top: 505px;
+      font-size: 15px; line-height: 1.7; color: var(--c-muted);
+      max-width: 520px;
+    }
+    .org {
+      position: absolute; left: 112px; top: 762px;
+      font-size: 18pt; font-weight: 600; color: var(--c-text);
+    }
+    .role {
+      position: absolute; left: 112px; top: 806px;
+      font-size: 11.5pt; font-weight: 400; color: var(--c-muted); line-height: 1.55;
+    }
+    .date {
+      position: absolute; left: 112px; top: 980px;
+      font-size: 10pt; font-weight: 400; color: var(--c-muted);
+      letter-spacing: 3px; text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+  <div class="cover">
+    <div class="layer-1">
+      <div class="glow-a"></div>
+      <div class="glow-b"></div>
+    </div>
+    <div class="layer-2">
+      <div class="frame"></div>
+    </div>
+    <div class="layer-3">
+      <div class="kicker">Plan de conception &amp; d&eacute;veloppement</div>
+      <div class="title">Unirances</div>
+      <div class="subtitle">Votre certitude au Cameroun</div>
+      <div class="summary">
+        Le plan d&rsquo;ex&eacute;cution du projet&nbsp;: neuf phases de cadrage,
+        conception, d&eacute;veloppement et lancement sur vingt-six mois, jalonn&eacute;es
+        de points de d&eacute;cision GO/NO-GO, avec un p&eacute;rim&egrave;tre MVP prioris&eacute;,
+        une feuille de route r&eacute;glementaire CIMA/ASAC et un budget de 50 millions de FCFA
+        align&eacute; sur le business plan 2027-2029.
+      </div>
+      <div class="org">Mballa Andela Rose</div>
+      <div class="role">Fondatrice, projet Unirances (ex-MboaAssur) &mdash; Cameroun &amp; zone CIMA<br>
+      Universit&eacute; Matemfen de Yaound&eacute;</div>
+      <div class="date">Octobre 2026 &middot; Document de travail</div>
+    </div>
+  </div>
+</body>
+</html>
