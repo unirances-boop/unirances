@@ -35,3 +35,20 @@ Stage Summary:
 - Livrable : /home/z/my-project/download/MboaAssur_Business_Plan_2027-2029.pdf (17 p., ~431 Ko, vectoriel)
 - Sources citées et vérifiées : ASAC, FANAF, CIMA, CNEF, OCDE, presse économique datée ; estimation zone CIMA > 3 000 Mds explicitement étiquetée
 - Scripts réutilisables : scripts/bp_charts.py, bp_body.py, bp_cover.html, bp_merge.py
+
+---
+Task ID: 3
+Agent: Main agent (Super Z)
+Task: Préparation push GitHub du projet (rebranding MboaAssur → Unirances)
+
+Work Log:
+- Reçu demande utilisateur : pousser tous les dossiers vers le repo GitHub « Unirances » ; lien share.google fourni mais sans valeur d'authentification (redirige vers une page de partage Google, aucun identifiant)
+- Créé README.md racine : vitrine Unirances (description projet, table des dossiers, chiffres clés BP, cadre réglementaire CIMA/ASAC/FANAF, instructions de reproduction)
+- Rempli download/README.md : sommaire du business plan + note sur l'ancien nom du fichier
+- Nettoyé le suivi git : git rm --cached .env + tool-results/ (6 fichiers) ; .gitignore durci (.env, tool-results/, db/, agent-ctx/)
+- Commit b3e683a : « Rebranding MboaAssur → Unirances » ; 38 fichiers suivis, working tree clean
+- BLOQUEUR : aucun token GitHub fourni — push impossible tant que l'utilisateur ne transmet pas un fine-grained PAT (Contents: Read/Write) + pseudo + nom du repo
+
+Stage Summary:
+- Repo local 100 % prêt à pousser sur origin/main ; en attente exclusive du token GitHub utilisateur
+- Reste à faire (proposé) : régénérer le BP PDF avec le nom Unirances (scripts réutilisables), renommer le fichier PDF
