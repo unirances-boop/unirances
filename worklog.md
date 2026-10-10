@@ -52,3 +52,20 @@ Work Log:
 Stage Summary:
 - Repo local 100 % prêt à pousser sur origin/main ; en attente exclusive du token GitHub utilisateur
 - Reste à faire (proposé) : régénérer le BP PDF avec le nom Unirances (scripts réutilisables), renommer le fichier PDF
+
+---
+Task ID: 3-bis
+Agent: Main agent (Super Z)
+Task: Push du projet vers GitHub unirances-boop/unirances
+
+Work Log:
+- Reçu de l'utilisateur : fine-grained PAT (Contents Read/Write) + URL repo https://github.com/unirances-boop/unirances
+- Vérifié via API GitHub : token valide, permissions push, repo public, branche main, repo distant vide
+- Ajouté remote origin (URL propre, token NON persisté dans .git/config) ; push one-shot avec URL authentifiée
+- Push réussi : main -> main (nouvelle branche) ; HEAD distant f905509 (auto-commit plateforme incluant la mise à jour worklog)
+- Vérifié le contenu distant : 4 dossiers (download, research, scripts, upload) + README.md Unirances + .gitignore + worklog.md ; BP PDF 440 Ko présent
+- Conseillé à l'utilisateur de révoquer immédiatement le token (partagé en clair dans le chat)
+
+Stage Summary:
+- Dépôt GitHub live : https://github.com/unirances-boop/unirances — 38 fichiers, branche main
+- Reste à faire (proposé, non demandé) : régénérer le BP PDF au nom Unirances et renommer le fichier
