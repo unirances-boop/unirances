@@ -1,0 +1,29 @@
+[
+  {
+    "url": "https://en.wikipedia.org",
+    "name": "Money",
+    "snippet": "Money is any item or verifiable record that is generally accepted as payment for goods and services and repayment of debts, such as taxes,",
+    "host_name": "en.wikipedia.org",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.usa.gov",
+    "name": "Money and credit | USAGov",
+    "snippet": "See if you have unclaimed money from the government, and understand government grants and loans. Learn about taxes, and get credit reports and scores.",
+    "host_name": "www.usa.gov",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.britannica.com",
+    "name": "Money | Definition, Economics, History, Types, & Facts",
+    "snippet": "Sep 29, 2026 — Money is a commodity accepted by general consent as a medium of economic exchange. It is the medium in which prices and values are expressed.",
+    "host_name": "www.britannica.com",
+    "rank": 2,
+    "date": "Sep 29, 2026",
+    "favicon": ""
+  }
+]
